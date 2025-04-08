@@ -35,13 +35,13 @@ To understand criminal behavior in relation to time, we extracted the hour from 
 
 - The hour with the **highest number of reported crimes** is stored as:
   ```python
-  peak_crime_hour = 14  # 2:00 PM
+  peak_crime_hour = 12  # 12:00 PM
   ```
 
-This suggests that crimes tend to peak during the afternoon, likely due to high human activity during this time.
+This suggests that crimes tend to peak at noon, likely due to high human activity during this time.
 
 ### 📈 Visualization
-
+![Peak Crime Hour]
 
 
 ---
@@ -54,13 +54,13 @@ We defined night crimes as those occurring between **10:00 PM and 3:59 AM**. Fil
 
 - The **area with the most night crimes**:
   ```python
-  peak_night_crime_location = "77th Street"
+  peak_night_crime_area = "Central"
   ```
 
 This implies a need for increased night-time patrolling in this area.
 
 ### 📈 Visualization
-
+![Peak Night_crime area]
 
 
 ---
@@ -72,21 +72,21 @@ We categorized victims into age groups: `0-17`, `18-25`, `26-34`, `35-44`, `45-5
 ### 🔍 Result
 
 ```python
-victim_ages =
-0-17      8573
-18-25    20345
-26-34    19221
-35-44    16012
-45-54    12320
-55-64     7520
-65+       3890
-Name: age_group, dtype: int64
+Victim Age Group Distribution:
+age_group
+0-17      4528
+18-25    28291
+26-34    47470
+35-44    42157
+45-54    28353
+55-64    20169
+65+      14747
 ```
 
-Young adults (18-25) and adults (26-34) are the most targeted, perhaps due to lifestyle exposure.
+Adults (26-34) and early middle-aged adults (35-44) are the most targeted, perhaps due to lifestyle exposure.
 
 ### 📈 Visualization
-
+![Victim age group distribution]
 
 
 ---
@@ -96,27 +96,35 @@ Young adults (18-25) and adults (26-34) are the most targeted, perhaps due to li
 ### ✨ a. Top 10 Most Common Crime Types
 
 ```python
-['BATTERY - SIMPLE ASSAULT', 'VEHICLE - STOLEN', 'BURGLARY FROM VEHICLE', ...]
+['BATTERY - SIMPLE ASSAULT', 'BURGLARY FROM VEHICLE', 'ASSAULT WITH DEADLY WEAPON, AGGRAVATED ASSAULT', 'INTIMATE PARTNER - SIMPLE ASSAULT', 'THEFT FROM MOTOR VEHICLE - GRAND ($950.01 AND OVER)', 'VANDALISM - FELONY ($400 & OVER, ALL CHURCH VANDALISMS)', 'THEFT PLAIN - PETTY ($950 & UNDER)', 'BURGLARY', 'THEFT-GRAND ($950.01 & OVER)EXCPT,GUNS,FOWL,LIVESTK,PROD']
 ```
+### 📈 Visualization
+![Top 10 most common crimes]
 
 
 
-### 👩👨 b. Crimes by Gender
+### ⚔️ b. Violent vs Non-Violent Crimes
 
-Males and females are almost equally targeted, with slightly more male victims.&#x20;
+I classified crimes using keywords like `ASSAULT`, `ROBBERY`, `HOMICIDE`, etc.&#x20;
 
-### ⚔️ c. Violent vs Non-Violent Crimes
+### 📈 Visualization
+![Victim age group distribution]
 
-We classified crimes using keywords like `ASSAULT`, `ROBBERY`, `HOMICIDE`, etc.&#x20;
 
-### 🌟 d. Crime Trends by Month
+### 🌟 c. Crime Trends by Month
 
-Some months show spikes — possibly due to seasonal events or holidays.&#x20;
+Some months show spikes (e.g June) — possibly due to seasonal events or holidays.&#x20;
 
-### 🌍 e. Heatmap by Hour & Day of Week
+### 📈 Visualization
+![Crime Trends by Month]
 
-This heatmap reveals that weekdays, especially **Friday afternoons**, experience heightened crime.&#x20;
 
+### 🌍 d. Heatmap by Hour & Day of Week
+
+This heatmap reveals that weekdays, especially **Friday and Wednesday Afternoons**, experience heightened crime.&#x20;
+
+### 📈 Visualization
+![Heatmap by Hour & Day of Week]
 ---
 
 ## 📆 Tools & Libraries Used
@@ -128,11 +136,11 @@ This heatmap reveals that weekdays, especially **Friday afternoons**, experience
 
 ## 🚀 Conclusion & Recommendations
 
-Based on our analysis, we offer the following insights to support LAPD operations:
+Based on my analysis, I offer the following insights to support LAPD operations:
 
-- Increase patrols in **high-crime hours (2PM - 4PM)**.
-- Deploy night units to areas like **77th Street**, which experiences significant late-night activity.
-- Launch awareness campaigns and community engagement for **youths and young adults**, the most targeted age groups.
+- Increase patrols in **high-crime hours (12PM - 1PM)**.
+- Deploy night units to areas like **Central**, which experiences significant late-night activity.
+- Launch awareness campaigns and community engagement for **young adults and early middle-aged adults**, the most targeted age groups.
 - Monitor **weekend trends and holiday spikes** using ongoing crime feeds.
 
 ---
@@ -149,7 +157,7 @@ Based on our analysis, we offer the following insights to support LAPD operation
 
 Huge thanks to the **Los Angeles Police Department** for providing the data and their continued efforts in keeping the city safe.
 
-> Data analysis by [Your Name]. Visual storytelling powered by Python.
+> Data analysis by [Ayotunde Akinboade]. Visual storytelling powered by Python.
 
 ---
 
