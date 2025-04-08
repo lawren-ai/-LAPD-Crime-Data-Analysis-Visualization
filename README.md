@@ -18,7 +18,7 @@ The dataset used in this analysis is `crimes.csv`, which includes detailed recor
 
 ## 🔢 Project Objectives
 
-The LAPD has enlisted our help to address the following key questions:
+The LAPD has enlisted help to address the following key questions:
 
 1. **Which hour of the day has the highest frequency of crimes?**
 2. **Which area experiences the most night crimes (between 10PM and 3:59AM)?**
@@ -29,7 +29,7 @@ The LAPD has enlisted our help to address the following key questions:
 
 ## 🕒 1. Peak Crime Hour
 
-To understand criminal behavior in relation to time, we extracted the hour from the `TIME OCC` field and plotted the number of crimes across each hour of the day.
+To understand criminal behavior in relation to time, I extracted the hour from the `TIME OCC` field and plotted the number of crimes across each hour of the day.
 
 ### 🔍 Result
 
@@ -48,7 +48,7 @@ This suggests that crimes tend to peak at noon, likely due to high human activit
 
 ## 🌆 2. Area with Highest Night Crime Frequency
 
-We defined night crimes as those occurring between **10:00 PM and 3:59 AM**. Filtering the dataset for those hours, we analyzed which areas were hotspots.
+I defined night crimes as those occurring between **10:00 PM and 3:59 AM**. Filtering the dataset for those hours, I analyzed which areas were hotspots.
 
 ### 🔍 Result
 
@@ -60,14 +60,14 @@ We defined night crimes as those occurring between **10:00 PM and 3:59 AM**. Fil
 This implies a need for increased night-time patrolling in this area.
 
 ### 📈 Visualization
-![Peak Night_crime area](https://github.com/lawren-ai/-LAPD-Crime-Data-Analysis-Visualization/blob/main/Top10AreasWithMostCrimes.PNG)
+![Peak Night_crime area](https://github.com/lawren-ai/-LAPD-Crime-Data-Analysis-Visualization/blob/main/Top10AreasWithMostNightCrimes.PNG)
 
 
 ---
 
 ## 🧑‍🏫 3. Victim Age Group Distribution
 
-We categorized victims into age groups: `0-17`, `18-25`, `26-34`, `35-44`, `45-54`, `55-64`, and `65+`, then counted crime occurrences per group.
+I categorized victims into age groups: `0-17`, `18-25`, `26-34`, `35-44`, `45-54`, `55-64`, and `65+`, then counted crime occurrences per group.
 
 ### 🔍 Result
 
@@ -86,7 +86,7 @@ age_group
 Adults (26-34) and early middle-aged adults (35-44) are the most targeted, perhaps due to lifestyle exposure.
 
 ### 📈 Visualization
-![Victim age group distribution]
+![Victim age group distribution](https://github.com/lawren-ai/-LAPD-Crime-Data-Analysis-Visualization/blob/main/CrimeFrequencyByVictimAgeGroup.PNG)
 
 
 ---
@@ -99,7 +99,7 @@ Adults (26-34) and early middle-aged adults (35-44) are the most targeted, perha
 ['BATTERY - SIMPLE ASSAULT', 'BURGLARY FROM VEHICLE', 'ASSAULT WITH DEADLY WEAPON, AGGRAVATED ASSAULT', 'INTIMATE PARTNER - SIMPLE ASSAULT', 'THEFT FROM MOTOR VEHICLE - GRAND ($950.01 AND OVER)', 'VANDALISM - FELONY ($400 & OVER, ALL CHURCH VANDALISMS)', 'THEFT PLAIN - PETTY ($950 & UNDER)', 'BURGLARY', 'THEFT-GRAND ($950.01 & OVER)EXCPT,GUNS,FOWL,LIVESTK,PROD']
 ```
 ### 📈 Visualization
-![Top 10 most common crimes]
+![Top 10 most common crimes](https://github.com/lawren-ai/-LAPD-Crime-Data-Analysis-Visualization/blob/main/Top10Crimes.PNG)
 
 
 
@@ -108,7 +108,7 @@ Adults (26-34) and early middle-aged adults (35-44) are the most targeted, perha
 I classified crimes using keywords like `ASSAULT`, `ROBBERY`, `HOMICIDE`, etc.&#x20;
 
 ### 📈 Visualization
-![Victim age group distribution]
+![Violent vs Non Violent](https://github.com/lawren-ai/-LAPD-Crime-Data-Analysis-Visualization/blob/main/ViolentVsNon-Violent.PNG)
 
 
 ### 🌟 c. Crime Trends by Month
@@ -116,7 +116,7 @@ I classified crimes using keywords like `ASSAULT`, `ROBBERY`, `HOMICIDE`, etc.&#
 Some months show spikes (e.g June) — possibly due to seasonal events or holidays.&#x20;
 
 ### 📈 Visualization
-![Crime Trends by Month]
+![Crime Trends by Month](https://github.com/lawren-ai/-LAPD-Crime-Data-Analysis-Visualization/blob/main/MonthlyCrimeTrends.PNG)
 
 
 ### 🌍 d. Heatmap by Hour & Day of Week
@@ -124,7 +124,8 @@ Some months show spikes (e.g June) — possibly due to seasonal events or holida
 This heatmap reveals that weekdays, especially **Friday and Wednesday Afternoons**, experience heightened crime.&#x20;
 
 ### 📈 Visualization
-![Heatmap by Hour & Day of Week]
+![Heatmap by Hour & Day of Week](https://github.com/lawren-ai/-LAPD-Crime-Data-Analysis-Visualization/blob/main/CrimeFrequencyByHourAndDay.PNG)
+
 ---
 
 ## 📆 Tools & Libraries Used
@@ -157,7 +158,7 @@ Based on my analysis, I offer the following insights to support LAPD operations:
 
 Huge thanks to the **Los Angeles Police Department** for providing the data and their continued efforts in keeping the city safe.
 
-> Data analysis by [Ayotunde Akinboade]. Visual storytelling powered by Python.
+> Data analysis by Ayotunde Akinboade. Visual storytelling powered by Python.
 
 ---
 
