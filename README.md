@@ -41,7 +41,7 @@ To understand criminal behavior in relation to time, we extracted the hour from 
 This suggests that crimes tend to peak at noon, likely due to high human activity during this time.
 
 ### 📈 Visualization
-![Peak Crime Hour]
+![Peak Crime Hour](https://github.com/lawren-ai/-LAPD-Crime-Data-Analysis-Visualization/blob/main/CrimeFrequenceByHourOfday.PNG)
 
 
 ---
@@ -60,7 +60,7 @@ We defined night crimes as those occurring between **10:00 PM and 3:59 AM**. Fil
 This implies a need for increased night-time patrolling in this area.
 
 ### 📈 Visualization
-![Peak Night_crime area]
+![Peak Night_crime area](https://github.com/lawren-ai/-LAPD-Crime-Data-Analysis-Visualization/blob/main/Top10AreasWithMostCrimes.PNG)
 
 
 ---
